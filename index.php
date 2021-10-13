@@ -1,11 +1,4 @@
-index.html
+This is just a PHP for purposes of Heroku.  The project is at the link below:
+<a href="index.html">Codex Academy Project 2 Home Page</a>
 <?php
-
-// Show all information, defaults to INFO_ALL
-phpinfo();
-
-// Show just the module information.
-// phpinfo(8) yields identical results.
-phpinfo(INFO_MODULES);
-
 ?>
