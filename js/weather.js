@@ -22,7 +22,7 @@ const updateCity = async(city) => {
 
 const getCityWeatherDetails = async (id, city, region, administrativeType, administrativeName, country) => {
     let output = '';
-    const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+    const base = 'https://dataservice.accuweather.com/currentconditions/v1/';
     const query = `${id}?apikey=${apiKey}`;
 
     const response = await fetch(base + query);
@@ -69,7 +69,7 @@ const getCityWeatherDetails = async (id, city, region, administrativeType, admin
 
 const getCityList = async (searchText) => {
     let output = '';
-    const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    const base = 'https://dataservice.accuweather.com/locations/v1/cities/search';
     const query = `?apikey=${apiKey}&q=${searchText}`;
 
     const response = await fetch(base + query);

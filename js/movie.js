@@ -22,7 +22,7 @@ const updateMovie = async(movie) => {
 
 const getMovieDetails = async (id) => {
     let output = '';
-    const base = 'http://www.omdbapi.com/';
+    const base = 'https://www.omdbapi.com/';
     const query = `?apikey=${apiKey}&i=${id}`
 
     const response = await fetch(base + query);
@@ -56,7 +56,7 @@ const getMovieDetails = async (id) => {
 
 const getMovieList = async (searchText) => {
     let output = '';
-    const base = "http://www.omdbapi.com/";
+    const base = "https://www.omdbapi.com/";
     const query = `?apikey=${apiKey}&s=${searchText}`;
 
     const response = await fetch(base + query);
