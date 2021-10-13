@@ -50,7 +50,7 @@ const getMovieDetails = async (id) => {
             </div>
         </div>
     </div>
-   
+   `
     $("#movie-details").html(output);
 }
 
