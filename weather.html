@@ -26,15 +26,34 @@
 			<div class="navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" href="movie.html">Movie Search</a>
+						<a class="nav-link active" aria-current="page" href="movie.html">Movie Search</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="weather.html">Weather Search</a>
+						<a class="nav-link active" href="#">Weather Search</a>
 					</li>
 				</ul>
+				<form class="d-flex">
+					<input id="search-text" name="city" class="form-control me-2" type="search" placeholder="Search"
+						aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
 			</div>
 		</div>
 	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-9">
+				<h3>City List</h3>
+				<div class="row" id="city-list"></div>
+			</div>
+				<div class="col-3">
+					<h3>Selected City Weather</h3>
+					<div class="row" id="city-weather-details"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
