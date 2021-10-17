@@ -74,5 +74,4 @@ const getMovieList = async (searchText) => {
     });
 
     $("#movie-list").html(output);
-    // console.log(output);
 }

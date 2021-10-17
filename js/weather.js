@@ -77,7 +77,7 @@ const getCityList = async (searchText) => {
 
     data.forEach((item) => {
         output += `
-        <div class="row">
+        <div class="city-item row">
                <a href="#" onclick="getCityWeatherDetails('${item.Key}','${item.LocalizedName}','${item.Type}','${item.AdministrativeArea.LocalizedType}','${item.AdministrativeArea.LocalizedName}','${item.Country.LocalizedName}')">${item.LocalizedName} which is a ${item.Type.toLowerCase()} in the ${item.AdministrativeArea.LocalizedType.toLowerCase()} of ${item.AdministrativeArea.LocalizedName}, ${item.Country.LocalizedName}</a>
         </div>`
     });
